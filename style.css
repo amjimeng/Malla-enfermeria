@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: #333;
+}
+
+.malla {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 16px;
+}
+
+.columna-año {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 220px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.columna-año h2 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.semestre {
+  border: 1px solid #bbb;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.semestre h3 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 5px;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ramo {
+  background-color: #ffd1dc; /* rosado pastel */
+  padding: 4px 6px;
+  font-size: 12px;
+  margin: 3px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ramo.aprobado {
+  background-color: #d8b4dd; /* morado pastel */
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: #e0e0e0; /* gris claro */
+  color: #999;
+  cursor: not-allowed;
+  pointer-events: none;
+}
